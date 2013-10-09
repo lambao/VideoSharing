@@ -6,6 +6,9 @@ gem 'rails', '4.0.0'
 # Authentication
 gem 'devise'
 
+# Twitter bootstrap
+gem 'bootstrap-sass'
+
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
