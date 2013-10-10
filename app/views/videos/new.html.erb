@@ -1,0 +1,13 @@
+<h1>Post Video</h1>
+<div class="row span6 offset3">
+  <%= form_for(@video) do |f| %>
+      <%= render 'shared/error_messages', object: f.object %>
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+      <%= f.label(:youtube_id, 'Youtube Url') %>
+      <%= f.text_field :youtube_id %>
+      <%= f.label :length %>
+      <%= f.number_field :length %>
+      <%= f.submit "Post!", class: "btn btn-large btn-primary" %>
+  <% end %>
+</div>

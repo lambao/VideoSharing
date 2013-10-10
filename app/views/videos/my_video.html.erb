@@ -1,0 +1,22 @@
+<div class="span8">
+  <% if @videos.any? %>
+      <h3>My videos (<%= @videos.count %>)</h3>
+          <% @videos.each do |video| %>
+          <ol class="microposts">
+            <li id="<%= video.id %>">
+              <span class="user"><%= video.title%></span>
+              <span class="timestamp">
+                Posted <%= time_ago_in_words(video.created_at) %> ago.
+              </span>
+            </li>
+          </ol>
+          <div class="col-sm-6 col-md-3">
+            <a href="#" class="thumbnail">
+              <img src="https://i1.ytimg.com/vi/4LHkPR4Bt-M/default.jpg" alt="...">
+            </a>
+          </div>
+          <%= video.get_thump_url(video.youtube_id) %>
+          <% end %>
+      <%= will_paginate @videos %>
+  <% end %>
+</div>
