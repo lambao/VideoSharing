@@ -1,13 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  title: MyString
+  title: MyText
   length: 1
-  youtube_id: 1
+  youtube_id: MyString
   view_count: 1
+  user_id: 1
 
 two:
-  title: MyString
+  title: MyText
   length: 1
-  youtube_id: 1
+  youtube_id: MyString
   view_count: 1
+  user_id: 1

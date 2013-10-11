@@ -9,13 +9,13 @@
                 Posted <%= time_ago_in_words(video.created_at) %> ago.
               </span>
             </li>
+
           </ol>
-          <div class="col-sm-6 col-md-3">
+          <section class="col-sm-6 col-md-3">
             <a href="#" class="thumbnail">
-              <img src="https://i1.ytimg.com/vi/4LHkPR4Bt-M/default.jpg" alt="...">
+              <img src="<%= video.get_thump_url(video.youtube_id) %>" alt="...">
             </a>
-          </div>
-          <%= video.get_thump_url(video.youtube_id) %>
+          </section>
           <% end %>
       <%= will_paginate @videos %>
   <% end %>

@@ -13,6 +13,11 @@ class VideosController < ApplicationController
       render 'videos/new'
     end
   end
+
+  def show
+    @video = Video.find(params[:id])
+  end
+
   def my_video
     @videos = current_user.videos.paginate(:page => params[:page], :per_page => 10)
   end
