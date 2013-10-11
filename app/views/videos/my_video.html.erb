@@ -9,7 +9,7 @@
           </ol>
           <section class="col-sm-6 col-md-3">
             <div class="thumbnail">
-              <img src="<%= video.get_thump_url(video.youtube_id) %>" alt="...">
+              <%= link_to(image_tag(video.get_thump_url(video.youtube_id)), video) %>
             </div>
           </section>
           <span class="timestamp">
@@ -20,7 +20,6 @@
             |
             <%= link_to "Delete", video, method: :delete, data: { confirm: "Are you sure?" } %>
           </br>
-
           <% end %>
       <%= will_paginate @videos %>
   <% end %>
