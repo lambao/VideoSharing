@@ -4,18 +4,23 @@
           <% @videos.each do |video| %>
           <ol class="microposts">
             <li id="<%= video.id %>">
-              <span class="user"><%= video.title%></span>
-              <span class="timestamp">
-                Posted <%= time_ago_in_words(video.created_at) %> ago.
-              </span>
+              <%= link_to(video.title, video, :class => "user") %>
             </li>
-
           </ol>
           <section class="col-sm-6 col-md-3">
-            <a href="#" class="thumbnail">
+            <div class="thumbnail">
               <img src="<%= video.get_thump_url(video.youtube_id) %>" alt="...">
-            </a>
+            </div>
           </section>
+          <span class="timestamp">
+                Posted <%= time_ago_in_words(video.created_at) %> ago.
+          </span>
+          <br>
+            <%= link_to("Edit", edit_video_path(video)) %>
+            |
+            <%= link_to "Delete", video, method: :delete, data: { confirm: "Are you sure?" } %>
+          </br>
+
           <% end %>
       <%= will_paginate @videos %>
   <% end %>

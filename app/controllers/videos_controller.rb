@@ -10,7 +10,7 @@ class VideosController < ApplicationController
       flash[:success] = "Video posted!"
       redirect_to root_path
     else
-      render 'videos/new'
+      render new_video_path
     end
   end
 
@@ -22,9 +22,29 @@ class VideosController < ApplicationController
     @videos = current_user.videos.paginate(:page => params[:page], :per_page => 10)
   end
 
+  def edit
+    @video = Video.find(params[:id])
+  end
+
+  def update
+    @video = Video.find(params[:id])
+    if @video.update_attributes(video_params)
+      flash[:success] = "Update successfull"
+      redirect_to my_video_path
+    else
+      render 'edit'
+    end
+  end
+
+  def destroy
+    Video.find(params[:id]).destroy
+    flash[:success] = "Video deleted"
+    redirect_to my_video_path
+  end
+
   private
   def video_params
-    params.require(:video).permit(:title, :youtube_id, :length)
+    params.require(:video).permit(:title, :youtube_url, :length)
   end
 
 end

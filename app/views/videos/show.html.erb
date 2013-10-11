@@ -1,0 +1,12 @@
+<div class="row span6 offset3">
+  <h3><%= @video.title %> </h3>
+  <span class="timestamp">
+        Posted <%= time_ago_in_words(@video.created_at) %> ago.
+  </span>
+  <div>
+    <iframe id="ytplayer" type="text/html" width="640" height="390"
+            src="<%= "http://www.youtube.com/embed/" + @video.youtube_id + "?autoplay=0" %>"
+            frameborder="0"/>
+
+  </div>
+</div>

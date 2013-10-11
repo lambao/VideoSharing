@@ -1,14 +1,12 @@
 class Video < ActiveRecord::Base
   require 'open-uri'
   require 'json'
-
   @@key = 'AIzaSyBMLmtbeRrYIlrNvyx-jKeXHmaGOmGmWIY'
-
   before_save 'parse_youtube'
   belongs_to :user
   validates(:title, presence: true)
   validates(:length, presence: true, numericality: { only_integer: true })
-  validates(:youtube_id, presence: true)
+  validates(:youtube_url, presence: true)
   def get_thump_url(youtube_id)
     url = "https://www.googleapis.com/youtube/v3/videos?id=#{youtube_id}&key=#{@@key}&part=snippet&fields=items(snippet/thumbnails/default/url)"
     tmp =  JSON.parse(open(url).read)
@@ -17,6 +15,6 @@ class Video < ActiveRecord::Base
   private
   def parse_youtube
     regex = /^(?:https?:\/\/)?(?:www\.)?\w*\.\w*\/(?:watch\?v=)?((?:p\/)?[\w\-]+)/
-    self.youtube_id = youtube_id.match(regex)[1]
+    self.youtube_id = self.youtube_url.match(regex)[1]
   end
 end

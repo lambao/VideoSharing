@@ -1,4 +1,4 @@
-<h1>Post Video</h1>
+<h1>Edit video</h1>
 <div class="row span6 offset3">
   <%= form_for(@video) do |f| %>
       <%= render 'shared/error_messages', object: f.object %>
@@ -8,6 +8,6 @@
       <%= f.text_field :youtube_url %>
       <%= f.label :length %>
       <%= f.number_field :length %>
-      <%= f.submit "Post!", class: "btn btn-large btn-primary" %>
+      <%= f.submit "Update", class: "btn btn-large btn-primary" %>
   <% end %>
 </div>
