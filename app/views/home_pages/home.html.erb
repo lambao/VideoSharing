@@ -1,2 +1,31 @@
-<h1>HomePages#home</h1>
-<p>Find me in app/views/home_pages/home.html.erb</p>
+<% if @lastestVideo.any? %>
+<div class="container-fluid">
+  <% count = 0 %>
+  <% @lastestVideo.each do |video| %>
+  <% if (count % 4) == 0 %>
+  <div class="row-fluid">
+  <% end %>
+    <div class="span3">
+      <ol class="microposts">
+        <li id="<%= video.id %>">
+          <%= link_to(video.title, video, :class => "user") %>
+        </li>
+      </ol>
+      <section class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+          <%= link_to(image_tag(video.get_thump_url(video.youtube_id)), video) %>
+        </div>
+      </section>
+      <span class="timestamp">
+            Posted <%= time_ago_in_words(video.created_at) %> ago.
+      </span>
+    </div>
+  <% if (count % 4) == 3 %>
+          </div>
+  <% end %>
+    <% count += 1 %>
+  <% end %>
+  <%= will_paginate @lastestVideo %>
+
+</div>
+<% end %>
