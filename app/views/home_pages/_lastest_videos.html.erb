@@ -6,31 +6,19 @@
           <div class="row-fluid">
       <% end %>
       <div class="span3">
-        <% if count < 11 %>
-            <ol class="microposts">
-              <li id="<%= video.id %>">
-                <%= link_to(video.title, video, :class => "user") %>
-              </li>
-            </ol>
-            <section class="col-sm-6 col-md-3">
-              <div class="thumbnail">
-                <%= link_to(image_tag(video.get_thump_url(video.youtube_id)), video) %>
-              </div>
-            </section>
-            <span class="timestamp">
-              Posted <%= time_ago_in_words(video.created_at) %> ago.
+        <% if count < 7 %>
+            <div class="thumbnail">
+              <%= link_to(image_tag(video.get_thump_url(video.youtube_id), :class => "thumbnail_img"), video) %>
+            </div>
+            <p class="video_title"><%= link_to(video.title, video) %></p>
+            <span class="video_time">
+                Posted <%= time_ago_in_words(video.created_at) %> ago.
             </span>
+            <p>
         <% else %>
-            <ol class="microposts">
-              <li>
-                &nbsp;
-              </li>
-            </ol>
-            <section class="col-sm-6 col-md-3">
-              <div class="thumbnail">
-                <%= link_to(button_tag("More", class: "btn btn-primary btn-block"), lastest_path) %>
-              </div>
-            </section>
+            <div class="thumbnail more_btn">
+              <%= link_to(button_tag("More", class: "btn btn-primary btn-block"), lastest_path) %>
+            </div>
         <% end %>
       </div>
       <% if (count % 4) == 3 %>

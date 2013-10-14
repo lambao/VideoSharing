@@ -4,27 +4,18 @@
         <div class="row-fluid">
     <% end %>
     <div class="span3">
-      <ol class="microposts">
-        <li id="<%= video.id %>">
-          <%= link_to(video.title, video, :class => "user") %>
-        </li>
-      </ol>
-      <section class="col-sm-6 col-md-3">
-        <div class="thumbnail">
-          <%= link_to(image_tag(video.get_thump_url(video.youtube_id)), video) %>
-        </div>
-      </section>
-        <span class="timestamp">
-          Posted <%= time_ago_in_words(video.created_at) %> ago.
-      </span>
+      <div class="thumbnail">
+        <%= link_to(image_tag(video.get_thump_url(video.youtube_id), :class => "thumbnail_img"), video) %>
+      </div>
+      <p class="video_title"><%= link_to(video.title, video) %></p>
+        <span class="video_time">
+            Posted <%= time_ago_in_words(video.created_at) %> ago.
+        </span>
+      <p>
     </div>
-    <% if (count % 4) == 3 %>
+    <% if (count % 4) == 3 || ( count >= (@lastestVideo.count - 1)) %>
         </div>
     <% end %>
     <% count += 1 %>
 <% end %>
-<div class="row">
-    <div class="span12">
-    <%= will_paginate @lastestVideo %>
-    </div>
-</div>
+<%= will_paginate @lastestVideo %>

@@ -1,26 +1,37 @@
-<div class="span8">
+<div class="container-fluid">
   <% if @videos.any? %>
-      <h3>My videos (<%= @videos.count %>)</h3>
-          <% @videos.each do |video| %>
-          <ol class="microposts">
-            <li id="<%= video.id %>">
-              <%= link_to(video.title, video, :class => "user") %>
-            </li>
-          </ol>
-          <section class="col-sm-6 col-md-3">
+      <h3 class="video_header">My videos (<%= @videos.count %>)</h3>
+          <% count = 0
+             @videos.each do |video|
+             if (count % 4) == 0
+          %>
+              <div class="row-fluid">
+          <% end %>
+          <div class="span3">
             <div class="thumbnail">
-              <%= link_to(image_tag(video.get_thump_url(video.youtube_id)), video) %>
+              <%= link_to(image_tag(video.get_thump_url(video.youtube_id), :class => "thumbnail_img"), video) %>
             </div>
-          </section>
-          <span class="timestamp">
+            <p class="video_title"><%= link_to(video.title, video) %></p>
+            <span class="video_time">
                 Posted <%= time_ago_in_words(video.created_at) %> ago.
-          </span>
-          <br>
+            </span>
+            <p>
             <%= link_to("Edit", edit_video_path(video)) %>
             |
             <%= link_to "Delete", video, method: :delete, data: { confirm: "Are you sure?" } %>
-          </br>
-          <% end %>
-      <%= will_paginate @videos %>
+            </p>
+          </div>
+          <% if ((count % 4) == 3) || (count > (@videos.count - 1)) %>
+              </div>
+          <% end
+                count += 1
+             end
+          %>
+  <% else %>
+      <h3>You don't have any video,
+          <%= link_to("post", post_video_path) %>
+          a video?
+      </h3>
   <% end %>
 </div>
+<%= will_paginate @videos %>

@@ -219,7 +219,7 @@ input {
   display: block;
 }
 .timestamp {
-  color: $grayLight;
+
 }
 .gravatar {
   float: left;
@@ -247,11 +247,46 @@ aside {
   }
 }
 
-/* Video thump */
-.thumbnail > a > img {
+/* My Videos header */
+.video_header {
+  border-bottom: 1px solid $grayLighter;
+  padding-bottom: 0.3em;
+}
+/* End my videos header */
+
+
+/* Video meta data */
+.thumbnail_img {
+  width: 295px;
+  height: 166px;
   display: block;
-  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
+.video_title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 0;
+  a {
+    color: rgb(51, 51, 51);
+    &:hover {
+      text-decoration: none;
+      color: $blue;
+    }
+  }
+}
+
+.video_time {
+  color: $grayLight;
+  font-size: 0.8em;
+}
+
+/* End video meta data */
+
+/* "More" button */
+.more_btn {
+  margin-top: 88px;
+}
+/* end more button*/

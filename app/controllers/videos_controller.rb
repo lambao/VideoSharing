@@ -19,7 +19,7 @@ class VideosController < ApplicationController
   end
 
   def my_video
-    @videos = current_user.videos.paginate(:page => params[:page], :per_page => 10)
+    @videos = current_user.videos.order("created_at DESC").paginate(:page => params[:page], :per_page => 12)
   end
 
   def edit
