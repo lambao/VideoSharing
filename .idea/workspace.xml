@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4415e69f-c2c7-4dae-aace-52a07d9c7181" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/count_youtube.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/count_youtube.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/videos/show.html.erb" afterPath="$PROJECT_DIR$/app/views/videos/show.html.erb" />
-    </list>
+    <list default="true" id="4415e69f-c2c7-4dae-aace-52a07d9c7181" name="Default" comment="" />
     <ignored path="VideoSharing.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="4415e69f-c2c7-4dae-aace-52a07d9c7181" time="1381716380680" ignored="false" />
