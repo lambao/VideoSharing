@@ -1,11 +1,19 @@
-<div class="row span6 offset3">
-  <h3><%= @video.title %> </h3>
-  <span class="timestamp">
-        Posted <%= time_ago_in_words(@video.created_at) %> ago.
-  </span>
-  <div>
-    <iframe id="ytplayer" type="text/html" width="640" height="390"
-            src="<%= "http://www.youtube.com/embed/" + @video.youtube_id + "?version=3&enablejsapi=1" %>"
-            frameborder="0"/>
+<div class="container">
+  <div class="row">
+    <div class="span7">
+     <iframe id="ytplayer" type="text/html" width="640" height="390" src="<%= "https://www.youtube.com/embed/" + @video.youtube_id + "?version=3&wmode=opaque&enablejsapi=1" %>" frameborder="0" allowfullscreen>
+     </iframe>
+    </div>
+    <div class="span5">
+      <p class="video_title"><%= @video.title %> </p>
+      <p>Posted by <%= @video.user.name %></p>
+      <p>
+        <span class="video_time">
+          Posted <%= time_ago_in_words(@video.created_at) %> ago.
+        </span>
+      </p>
+      <div class="fb-like" data-href="<%= request.original_url %>" data-width="400" data-height="10" data-colorscheme="light" data-layout="standard" data-action="like" data-show-faces="true" data-send="false"></div>
+      <div class="fb-comments" data-href="<%= request.original_url %>" data-colorscheme="light" data-numposts="10" data-width="400"></div>
+    </div>
   </div>
 </div>
