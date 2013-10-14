@@ -1,0 +1,41 @@
+<fieldset>
+  <legend>Lastest videos</legend>
+  <% count = 0 %>
+  <% @lastestVideo.each do |video| %>
+      <% if (count % 4) == 0 %>
+          <div class="row-fluid">
+      <% end %>
+      <div class="span3">
+        <% if count < 11 %>
+            <ol class="microposts">
+              <li id="<%= video.id %>">
+                <%= link_to(video.title, video, :class => "user") %>
+              </li>
+            </ol>
+            <section class="col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <%= link_to(image_tag(video.get_thump_url(video.youtube_id)), video) %>
+              </div>
+            </section>
+            <span class="timestamp">
+              Posted <%= time_ago_in_words(video.created_at) %> ago.
+            </span>
+        <% else %>
+            <ol class="microposts">
+              <li>
+                &nbsp;
+              </li>
+            </ol>
+            <section class="col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <%= link_to(button_tag("More", class: "btn btn-primary btn-block")) %>
+              </div>
+            </section>
+        <% end %>
+      </div>
+      <% if (count % 4) == 3 %>
+          </div>
+      <% end %>
+      <% count += 1 %>
+  <% end %>
+</fieldset>
