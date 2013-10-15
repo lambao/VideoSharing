@@ -1,0 +1,29 @@
+<fieldset>
+  <legend>Hot videos</legend>
+  <% count = 0 %>
+  <% @hotVideo.each do |video| %>
+      <% if (count % 4) == 0 %>
+          <div class="row-fluid">
+      <% end %>
+      <div class="span3">
+        <% if count < 7 %>
+            <div class="thumbnail">
+              <%= link_to(image_tag(video.get_thump_url(video.youtube_id), :class => "thumbnail_img"), video) %>
+            </div>
+            <p class="video_title"><%= link_to(video.title, video) %></p>
+            <span class="video_time">
+                Posted <%= time_ago_in_words(video.created_at) %> ago.
+            </span>
+            <p>
+        <% else %>
+            <div class="thumbnail more_btn">
+              <%= link_to(button_tag("More", class: "btn btn-primary btn-block"), lastest_path) %>
+            </div>
+        <% end %>
+      </div>
+      <% if (count % 4) == 3 %>
+          </div>
+      <% end %>
+      <% count += 1 %>
+  <% end %>
+</fieldset>

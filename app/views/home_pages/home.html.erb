@@ -3,3 +3,9 @@
   <%= render 'lastest_videos' %>
 </div>
 <% end %>
+
+<% if @hotVideo.any? %>
+    <div class="container-fluid">
+      <%= render 'hot_videos' %>
+    </div>
+<% end %>
