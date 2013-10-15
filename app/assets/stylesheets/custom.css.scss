@@ -278,9 +278,19 @@ aside {
   }
 }
 
+.video_big_title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 0;
+  font-size: 1.5em;
+  font-weight:bold;
+}
+
 .video_time {
   color: $grayLight;
   font-size: 0.8em;
+  display: block;
 }
 
 /* End video meta data */

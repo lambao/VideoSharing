@@ -1,6 +1,4 @@
 class VideosController < ApplicationController
-  before_filter :authenticate_user!
-
   def new
     @video = Video.new
   end
@@ -16,6 +14,11 @@ class VideosController < ApplicationController
 
   def show
     @video = Video.find(params[:id])
+  end
+
+  def increase_count_view
+    @video = Video.find(params[:id])
+    @video.increment!('view_count')
   end
 
   def my_video
@@ -46,5 +49,4 @@ class VideosController < ApplicationController
   def video_params
     params.require(:video).permit(:title, :youtube_url, :length)
   end
-
 end
