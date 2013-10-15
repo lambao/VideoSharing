@@ -1,4 +1,7 @@
 class VideosController < ApplicationController
+  before_filter :authenticate_user!, :except => [:show, :increase_count_view]
+  load_and_authorize_resource
+
   def new
     @video = Video.new
   end
@@ -27,6 +30,10 @@ class VideosController < ApplicationController
 
   def edit
     @video = Video.find(params[:id])
+    if !(current_user.id == @video.user.id)
+        flash[:error] = "You cannot edit video of other user"
+        redirect_to root_path
+    end
   end
 
   def update
@@ -47,6 +54,6 @@ class VideosController < ApplicationController
 
   private
   def video_params
-    params.require(:video).permit(:title, :youtube_url, :length)
+    params.require(:video).permit(:title, :youtube_url, :description, :length)
   end
 end

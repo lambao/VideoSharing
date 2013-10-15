@@ -8,6 +8,12 @@ gem 'rails', '4.0.0'
 # Authentication
 gem 'devise'
 
+# Authorization
+gem 'cancan'
+
+# Roles
+gem 'rolify'
+
 # Paginate
 gem 'will_paginate'
 

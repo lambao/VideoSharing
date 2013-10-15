@@ -1,13 +1,34 @@
-<h1>Post Video</h1>
-<div class="row span6 offset3">
-  <%= form_for(@video) do |f| %>
-      <%= render 'shared/error_messages', object: f.object %>
-      <%= f.label :title %>
-      <%= f.text_field :title %>
-      <%= f.label(:youtube_url, 'Youtube Url') %>
-      <%= f.text_field :youtube_url %>
-      <%= f.label :length %>
-      <%= f.number_field :length %>
-      <%= f.submit "Post!", class: "btn btn-large btn-primary" %>
-  <% end %>
+<div class="container-fluid">
+  <h3 class="video_header">Post video</h3>
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span8">
+        <%= form_for(@video) do |f| %>
+            <%= render 'shared/error_messages', object: f.object %>
+            <%= f.label :title %>
+            <%= f.text_field :title %>
+            <%= f.label(:youtube_url, 'Youtube Url') %>
+            <%= f.text_field(:youtube_url)  %>
+            <%= f.label(:description, 'Description') %>
+            <%= f.text_field :description %>
+            <%= f.label :length %>
+            <%= f.number_field :length %>
+            <%= f.submit "Post!", class: "btn btn-large btn-primary" %>
+        <% end %>
+      </div>
+      <div class="span4">
+      </div>
+    </div>
+  </div>
 </div>
+
+<script type="text/javascript">
+    $("#video_youtube_url").change(function() {
+        if ($("#video_youtube_url").val().length >= 0 ){
+            var tmp = $("#video_youtube_url").val().match(/^(?:https?:\/\/)?(?:www\.)?\w*\.\w*\/(?:watch\?v=)?((?:p\/)?[\w\-]+)/);
+            if (tmp != null && tmp.length >= 1) {
+                console.log(tmp[1])
+            }
+        }
+    });
+</script>

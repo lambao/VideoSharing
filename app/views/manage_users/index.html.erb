@@ -1,0 +1,23 @@
+<div class="container-fluid">
+  <% @users.each do |user| %>
+  <div class="row-fluid">
+    <div class="span4">
+      <%= user.name %>
+    </div>
+    <div class="span8">
+      <div class="control-group">
+        <div class="controls">
+          <label class="radio inline" for="radios-0">
+            <input name="radios" id="radios-0" value="Admin" checked="checked" type="radio" disabled="true">
+            Admin
+          </label>
+          <label class="radio inline" for="radios-0">
+            <input name="radios" id="radios-1" value="Guest" type="radio" disabled="true">
+            Guest
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>

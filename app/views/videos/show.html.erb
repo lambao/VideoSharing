@@ -39,7 +39,6 @@
         });
     }
     function onPlayerStateChange(event) {
-        console.log('hihi');
         $.ajax('', {
             url: "<%= increase_count_path %>",
             data: { id: "<%= @video.id %>"},
