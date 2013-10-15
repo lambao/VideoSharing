@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131014040831) do
+ActiveRecord::Schema.define(version: 20131015044603) do
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(version: 20131014040831) do
     t.datetime "updated_at"
     t.integer  "user_id"
     t.string   "youtube_url"
+    t.text     "description"
   end
 
   add_index "videos", ["created_at"], name: "index_videos_on_created_at"

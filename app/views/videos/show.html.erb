@@ -1,22 +1,26 @@
 <div class="container">
   <div class="row">
     <div class="span7">
-     <iframe id="ytplayer" type="text/html" width="640" height="390" src="<%= "https://www.youtube.com/embed/" + @video.youtube_id + "?version=3&wmode=opaque&enablejsapi=1" %>" frameborder="0" allowfullscreen>
-     </iframe>
+     <div id="ytplayer">
+     </div>
     </div>
     <div class="span5">
-      <p class="video_title"><%= @video.title %> </p>
-      <p>Posted by <%= @video.user.name %></p>
-      <p>
-        <span class="video_time">
-          Posted <%= time_ago_in_words(@video.created_at) %> ago.
-        </span>
-      </p>
+      <div id="metadata">
+          <span class="video_big_title"><%= @video.title %> </span>
+          <p class="video_description"><%= @video.description %></p>
+          <span class="video_time">
+            Posted by <%= @video.user.name %> <%=  time_ago_in_words(@video.created_at) %> ago.
+          </span>
+          <span class="video_count" id="video_count">
+            Total views: <%= @video.view_count %>
+          </span>
+      </div>
       <div class="fb-like" data-href="<%= request.original_url %>" data-width="400" data-height="10" data-colorscheme="light" data-layout="standard" data-action="like" data-show-faces="true" data-send="false"></div>
       <div class="fb-comments" data-href="<%= request.original_url %>" data-colorscheme="light" data-numposts="10" data-width="400"></div>
     </div>
   </div>
 </div>
+<<<<<<< HEAD
 <script type="TEXT/JAVASCRIPT">
 function onYouTubePlayerReady() {
 alert("hehi");
@@ -32,4 +36,33 @@ alert("Player's new state: " + newState);
 function onYouTubeIframeAPIReady() {
 console.log("onYouTubeIframeAPIReady");
 }
+=======
+
+<script type="text/javascript">
+    var tag = document.createElement('script');
+
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    var player;
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('ytplayer', {
+            height: '390',
+            width: '640',
+            videoId: '<%= @video.youtube_id %>',
+            events: {
+                'onStateChange': onPlayerStateChange
+            }
+        });
+    }
+    function onPlayerStateChange(event) {
+        console.log('hihi');
+        $.ajax('', {
+            url: "<%= increase_count_path %>",
+            data: { id: "<%= @video.id %>"},
+            type: 'PUT',
+        });
+    }
+>>>>>>> facebook_commend
 </script>
