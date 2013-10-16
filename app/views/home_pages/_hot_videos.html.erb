@@ -11,6 +11,9 @@
               <%= link_to(image_tag(video.get_thump_url(video.youtube_id), :class => "thumbnail_img"), video) %>
             </div>
             <p class="video_title"><%= link_to(video.title, video) %></p>
+            <span class="video_count">
+              Views <%= video.view_count %>. Likes 0.
+            </span>
             <span class="video_time">
                 Posted <%= time_ago_in_words(video.created_at) %> ago.
             </span>

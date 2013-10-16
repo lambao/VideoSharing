@@ -265,6 +265,7 @@ aside {
 }
 
 .video_title {
+  font-size: 1.2em;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -281,10 +282,10 @@ aside {
 .video_big_title {
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
   margin-bottom: 0;
   font-size: 1.5em;
   font-weight:bold;
+  word-wrap: break-word
 }
 
 .video_time {
@@ -293,6 +294,11 @@ aside {
   display: block;
 }
 
+.video_count {
+  color: $grayLight;
+  font-size: 0.9em;
+  display: block;
+}
 /* End video meta data */
 
 /* "More" button */
@@ -300,3 +306,7 @@ aside {
   margin-top: 88px;
 }
 /* end more button*/
+
+/* Aside  */
+
+/* End aside */
