@@ -1,20 +1,40 @@
 <div class="container-fluid">
+  <h3 class="video_header">Users List</h3>
+  <div class="row-fluid">
+    <div class="span4">
+      Username:
+    </div>
+    <div class="span8">
+      Role:
+    </div>
+  </div>
   <% @users.each do |user| %>
   <div class="row-fluid">
     <div class="span4">
-      <%= user.name %>
+      <%= link_to(user.name, "manage_user/edit/#{user.id}") %>
     </div>
     <div class="span8">
       <div class="control-group">
         <div class="controls">
-          <label class="radio inline" for="radios-0">
-            <input name="radios" id="radios-0" value="Admin" checked="checked" type="radio" disabled="true">
+          <% if user.has_role?(:admin) %>
+          <label class="radio inline" for="radios-<%= user.id %>">
+            <input name="radios" id="radios-<%= user.id %>" value="Admin" type="radio" disabled="true" checked>
             Admin
           </label>
-          <label class="radio inline" for="radios-0">
-            <input name="radios" id="radios-1" value="Guest" type="radio" disabled="true">
+          <label class="radio inline" for="radios-<%= user.id %>">
+            <input name="radios" id="radios-<%= user.id %>" value="Guest" type="radio" disabled="true">
             Guest
           </label>
+          <% else %>
+          <label class="radio inline" for="radios-<%= user.id %>">
+            <input name="radios" id="radios-<%= user.id %>" value="Admin" type="radio" disabled="true">
+            Admin
+          </label>
+          <label class="radio inline" for="radios-<%= user.id %>">
+            <input name="radios" id="radios-<%= user.id %>" value="Guest" type="radio" disabled="true" checked>
+            Guest
+          </label>
+          <% end %>
         </div>
       </div>
     </div>

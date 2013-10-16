@@ -14,6 +14,7 @@
           <span class="video_count" id="video_count">
             Total views: <%= @video.view_count %>
           </span>
+          <span id="firstGen" hidden="true">first</span>
       </div>
       <div class="fb-like" data-href="<%= request.original_url %>" data-width="400" data-height="10" data-colorscheme="light" data-layout="standard" data-action="like" data-show-faces="true" data-send="false"></div>
       <div class="fb-comments" data-href="<%= request.original_url %>" data-colorscheme="light" data-numposts="10" data-width="400"></div>
@@ -22,7 +23,6 @@
 </div>
 <script type="text/javascript">
     var tag = document.createElement('script');
-
     tag.src = "https://www.youtube.com/iframe_api";
     var firstScriptTag = document.getElementsByTagName('script')[0];
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
@@ -39,10 +39,15 @@
         });
     }
     function onPlayerStateChange(event) {
-        $.ajax('', {
+      if ($("#firstGen").text() == "first"){
+        if (event.data  == 1) {
+          $.ajax('', {
             url: "<%= increase_count_path %>",
             data: { id: "<%= @video.id %>"},
             type: 'PUT',
-        });
+          });
+          $("#firstGen").text("other")
+        }
+      }
     }
 </script>
