@@ -1,6 +1,6 @@
 VideoSharing::Application.routes.draw do
   resources :videos
-  devise_for :users
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
   root 'home_pages#home'
   match 'post_video', to: 'videos#new', via: [:get, :post]
   match 'my_video', to: 'videos', via: [:get]

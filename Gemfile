@@ -17,6 +17,10 @@ gem 'rolify'
 # Xml parse
 gem 'nokogiri'
 
+# login with facebook
+gem 'omniauth'
+gem 'omniauth-facebook'
+
 # Paginate
 gem 'will_paginate'
 
