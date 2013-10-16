@@ -14,6 +14,9 @@ gem 'cancan'
 # Roles
 gem 'rolify'
 
+# Xml parse
+gem 'nokogiri'
+
 # Paginate
 gem 'will_paginate'
 

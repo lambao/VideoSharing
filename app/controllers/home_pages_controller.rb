@@ -1,4 +1,6 @@
 class HomePagesController < ApplicationController
+
+
   def home
     @lastestVideo = Video.order("created_at DESC").limit(8)
     @hotVideo = Video.order("view_count DESC").limit(8)

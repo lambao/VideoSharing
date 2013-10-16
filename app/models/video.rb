@@ -14,6 +14,15 @@ class Video < ActiveRecord::Base
     tmp =  JSON.parse(open(url).read)
     return tmp['items'][0]['snippet']['thumbnails']['high']['url']
   end
+
+  def get_count_like(url)
+    url = URI.parse(URI.encode("https://api.facebook.com/method/fql.query?query=select url,like_count, commentsbox_count from link_stat where url = \"#{url}\""))
+    doc = Nokogiri::HTML(open(url))
+    doc.xpath('//like_count').each do |like_count|
+      return like_count.content
+    end
+  end
+
   private
   def parse_youtube
     regex = /^(?:https?:\/\/)?(?:www\.)?\w*\.\w*\/(?:watch\?v=)?((?:p\/)?[\w\-]+)/
