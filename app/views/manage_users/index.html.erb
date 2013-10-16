@@ -18,7 +18,7 @@
         <div class="controls">
           <% if user.has_role?(:admin) %>
           <label class="radio inline" for="radios-<%= user.id %>">
-            <input name="radios" id="radios-<%= user.id %>" value="Admin" type="radio" disabled="true" checked>
+            <input name="radios" id="radios-<%= user.id %>" value="Admin" type="radio" disabled="true" checked="checked">
             Admin
           </label>
           <label class="radio inline" for="radios-<%= user.id %>">
@@ -31,7 +31,7 @@
             Admin
           </label>
           <label class="radio inline" for="radios-<%= user.id %>">
-            <input name="radios" id="radios-<%= user.id %>" value="Guest" type="radio" disabled="true" checked>
+            <input name="radios" id="radios-<%= user.id %>" value="Guest" type="radio" disabled="true" checked="checked">
             Guest
           </label>
           <% end %>

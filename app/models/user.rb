@@ -7,6 +7,7 @@ class User < ActiveRecord::Base
   validates(:name, presence: true)
   has_many :videos, dependent: :destroy
   after_create :assign_guest_role
+
   private
   def assign_guest_role
     self.add_role :guest

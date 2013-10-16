@@ -1,13 +1,26 @@
 class ManageUsersController < ApplicationController
+  before_filter :authenticate_user!
   def index
+    if !(current_user.has_role?(:admin))
+      flash[:error] = "You dont have right to access this page"
+      redirect_to root_path
+    end
      @users = User.all
   end
 
   def edit
+    if !(current_user.has_role?(:admin))
+      flash[:error] = "You dont have right to access this page"
+      redirect_to root_path
+    end
   	@user = User.find(params[:id])
   end
 
   def update
+    if !(current_user.has_role?(:admin))
+      flash[:error] = "You dont have right to access this page"
+      redirect_to root_path
+    end
   	@user = User.find(params[:id])
   	if (params[:role] == "admin")
   		if @user.has_role?(:guest)

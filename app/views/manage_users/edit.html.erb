@@ -16,29 +16,23 @@
     <div class="span8">
       <div class="control-group">
         <div class="controls">
-          <% if @user.has_role?(:admin) %>
-          <label class="radio inline" for="radios-<%= @user.id %>">
-            <input name="role" id="radios-<%= @user.id %>" value="admin" type="radio" checked>
-            Admin
-          </label>
-          <label class="radio inline" for="radios-<%= @user.id %>">
-            <input name="role" id="radios-<%= @user.id %>" value="guest" type="radio">
-            Guest
-          </label>
-          <% else %>
-          <label class="radio inline" for="radios-<%= @user.id %>">
-            <input name="role" id="radios-<%= @user.id %>" value="admin" type="radio" >
-            Admin
-          </label>
-          <label class="radio inline" for="radios-<%= @user.id %>">
-            <input name="role" id="radios-<%= @user.id %>" value="guest" type="radio" checked>
-            Guest
-          </label>
+          <label for="role" class="radio inline"></label>
+          <% [ 'admin', 'guest'].each do |role| %>
+              <%=
+                  if (@user.has_role?(:admin) && (role == 'admin'))
+                    radio_button_tag('role', role, true)
+                  elsif (@user.has_role?(:guest) && (role == 'guest'))
+                    radio_button_tag 'role', role, true
+                  else
+                    radio_button_tag 'role', role
+                  end
+              %>
+              <%= role.humanize %>
           <% end %>
         </div>
       </div>
     </div>
-    <%= submit_tag("Update") %>
+    <%= submit_tag("Update", class: "btn btn-large btn-primary") %>
     <% end %>
   </div>
 </div>
