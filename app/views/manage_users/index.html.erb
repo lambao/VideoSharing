@@ -18,20 +18,20 @@
         <div class="controls">
           <% if user.has_role?(:admin) %>
           <label class="radio inline" for="radios-<%= user.id %>">
-            <input name="radios" id="radios-<%= user.id %>" value="Admin" type="radio" disabled="true" checked="checked">
+            <input name="radios-<%= user.id %>" id="radios-<%= user.id %>" value="Admin" type="radio" disabled="true" checked="checked">
             Admin
           </label>
           <label class="radio inline" for="radios-<%= user.id %>">
-            <input name="radios" id="radios-<%= user.id %>" value="Guest" type="radio" disabled="true">
+            <input name="radios-<%= user.id %>" id="radios-<%= user.id %>" value="Guest" type="radio" disabled="true">
             Guest
           </label>
           <% else %>
           <label class="radio inline" for="radios-<%= user.id %>">
-            <input name="radios" id="radios-<%= user.id %>" value="Admin" type="radio" disabled="true">
+            <input name="radios-<%= user.id %>" id="radios-<%= user.id %>" value="Admin" type="radio" disabled="true">
             Admin
           </label>
           <label class="radio inline" for="radios-<%= user.id %>">
-            <input name="radios" id="radios-<%= user.id %>" value="Guest" type="radio" disabled="true" checked="checked">
+            <input name="radios-<%= user.id %>" id="radios-<%= user.id %>" value="Guest" type="radio" disabled="true" checked="checked">
             Guest
           </label>
           <% end %>
