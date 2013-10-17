@@ -1,5 +1,5 @@
 <% count = 0 %>
-<% @lastestVideo.each do |video| %>
+<% @lastestVideo.each_with_index do |video, index| %>
     <% if (count % 4) == 0 %>
         <div class="row-fluid">
     <% end %>
@@ -16,7 +16,7 @@
         </span>
       <p>
     </div>
-    <% if (count % 4) == 3 || ( count >= (@lastestVideo.count - 1)) %>
+    <% if (count % 4) == 3 || ( index == @lastestVideo.size - 1) %>
         </div>
     <% end %>
     <% count += 1 %>

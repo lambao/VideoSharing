@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37751478-540b-427e-825b-a2e83b2f90d9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/home_pages/hot.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/VideoSharing.iml" afterPath="$PROJECT_DIR$/.idea/VideoSharing.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home_pages/_hot_videos.html.erb" afterPath="$PROJECT_DIR$/app/views/home_pages/_hot_videos.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/home_pages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/home_pages_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home_pages/hot.html.erb" afterPath="$PROJECT_DIR$/app/views/home_pages/hot.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home_pages/lastest.html.erb" afterPath="$PROJECT_DIR$/app/views/home_pages/lastest.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="VideoSharing.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,6 +25,7 @@
     <file path="/custom.css.scss" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1381897438219" ignored="false" />
     <file path="/_lastest_videos.html.erb" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1381914085760" ignored="false" />
     <file path="/devise.rb" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1381918878794" ignored="false" />
+    <file path="/hot.html.erb" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1381979711214" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,33 +54,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_header.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="57" selection-start="438" selection-end="438" vertical-scroll-proportion="-5.625">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home_pages_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/home_pages_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="14" selection-start="317" selection-end="327" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hot.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/home_pages/hot.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="100" selection-start="880" selection-end="880" vertical-scroll-proportion="0.7165605">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="home.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home_pages/home.html.erb">
           <provider selected="true" editor-type-id="text-editor">
@@ -94,10 +63,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_hot_videos.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/home_pages/_hot_videos.html.erb">
+      <file leaf-file-name="hot.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/home_pages/hot.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="22" selection-start="408" selection-end="1023" vertical-scroll-proportion="-10.0">
+            <state line="14" column="70" selection-start="918" selection-end="918" vertical-scroll-proportion="0.6213018">
               <folding />
             </state>
           </provider>
@@ -106,7 +75,7 @@
       <file leaf-file-name="lastest.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home_pages/lastest.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="10" selection-start="308" selection-end="893" vertical-scroll-proportion="-10.0">
+            <state line="18" column="54" selection-start="977" selection-end="977" vertical-scroll-proportion="-11.25">
               <folding />
             </state>
           </provider>
@@ -820,13 +789,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="57" selection-start="438" selection-end="438" vertical-scroll-proportion="-5.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/home_pages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="14" selection-start="317" selection-end="327" vertical-scroll-proportion="0.0">
@@ -834,9 +796,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home_pages/home.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/home_pages/_hot_videos.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="9" column="66" selection-start="263" selection-end="263" vertical-scroll-proportion="0.1433121">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="38" selection-start="221" selection-end="221" vertical-scroll-proportion="0.21367522">
           <folding />
         </state>
       </provider>
@@ -848,23 +817,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home_pages/_hot_videos.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/home_pages/home.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="22" selection-start="408" selection-end="1023" vertical-scroll-proportion="-10.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home_pages/lastest.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="10" selection-start="308" selection-end="893" vertical-scroll-proportion="-10.0">
+        <state line="18" column="54" selection-start="977" selection-end="977" vertical-scroll-proportion="-11.25">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home_pages/hot.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="100" selection-start="880" selection-end="880" vertical-scroll-proportion="0.7165605">
+        <state line="14" column="70" selection-start="918" selection-end="918" vertical-scroll-proportion="0.6213018">
           <folding />
         </state>
       </provider>

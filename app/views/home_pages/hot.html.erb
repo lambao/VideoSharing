@@ -1,23 +1,23 @@
-<% count = 0 %>
-<% @hotVideos.each do |video| %>
-    <% if (count % 4) == 0 %>
-        <div class="row-fluid">
+<% count = 1 %>
+<% @hotVideos.each_with_index do |video, index| %>
+    <% if (count % 4) == 1 %>
+    <div class="row-fluid">
     <% end %>
-    <div class="span3">
-      <div class="thumbnail">
-        <%= link_to(image_tag(video.get_thump_url(video.youtube_id), :class => "thumbnail_img"), video) %>
-      </div>
-      <p class="video_title"><%= link_to(video.title, video) %></p>
-        <span class="video_count">
-          Views <%= video.view_count %>. Comments <fb:comments-count href=<%= request.protocol + request.host + url_for(:controller => 'videos', :action => 'show', :id => video.id ) %>></fb:comments-count>. Like <%= video.get_count_like(request.protocol + request.host + url_for(:controller => 'videos', :action => 'show', :id => video.id )) %>.
-        </span>
-        <span class="video_time">
-            Posted <%= time_ago_in_words(video.created_at) %> ago.
-        </span>
-      <p>
-    </div>
-    <% if (count % 4) == 3 || ( count >= (@hotVideos.count - 1)) %>
+        <div class="span3">
+          <div class="thumbnail">
+            <%= link_to(image_tag(video.get_thump_url(video.youtube_id), :class => "thumbnail_img"), video) %>
+          </div>
+          <p class="video_title"><%= link_to(video.title, video) %></p>
+            <span class="video_count">
+              Views <%= video.view_count %>. Comments <fb:comments-count href=<%= request.protocol + request.host + url_for(:controller => 'videos', :action => 'show', :id => video.id ) %>></fb:comments-count>. Like <%= video.get_count_like(request.protocol + request.host + url_for(:controller => 'videos', :action => 'show', :id => video.id )) %>.
+            </span>
+            <span class="video_time">
+                Posted <%= time_ago_in_words(video.created_at) %> ago.
+            </span>
+          <p>
         </div>
+    <% if (count % 4) == 0 || ( index == @hotVideos.size - 1) %>
+    </div>
     <% end %>
     <% count += 1 %>
 <% end %>
