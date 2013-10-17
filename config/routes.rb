@@ -6,6 +6,7 @@ VideoSharing::Application.routes.draw do
   match 'my_video', to: 'videos', via: [:get]
   match 'increase_count', to: 'videos#increase_count_view', via: [:put]
   match 'lastest', to: 'home_pages#lastest', via: [:get]
+  match 'hot', to:'home_pages#hot', via: [:get]
   match 'user_list', to: 'manage_users#index', via: [:get]
   get 'manage_user/edit/:id', to: 'manage_users#edit'
   post 'manage_user/edit/:id', to: 'manage_users#update'

@@ -1,5 +1,5 @@
 <% count = 0 %>
-<% @lastestVideo.each do |video| %>
+<% @hotVideos.each do |video| %>
     <% if (count % 4) == 0 %>
         <div class="row-fluid">
     <% end %>
@@ -16,9 +16,9 @@
         </span>
       <p>
     </div>
-    <% if (count % 4) == 3 || ( count >= (@lastestVideo.count - 1)) %>
+    <% if (count % 4) == 3 || ( count >= (@hotVideos.count - 1)) %>
         </div>
     <% end %>
     <% count += 1 %>
 <% end %>
-<%= will_paginate @lastestVideo %>
+<%= will_paginate @hotVideos %>
