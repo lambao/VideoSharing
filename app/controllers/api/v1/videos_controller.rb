@@ -8,13 +8,13 @@ class Api::V1::VideosController  < ApplicationController
     end
   end
   def hot_videos
-    @hotVideos = Video.order("view_count DESC")
+    @hotVideos = Video.order("view_count DESC").limit(10)
     respond_to do |format|
       format.json { render json: @hotVideos }
     end
   end
   def lastest_videos
-    @lastestVideo = Video.order("created_at DESC")
+    @lastestVideo = Video.order("created_at DESC").limit(10)
     respond_to do |format|
       format.json { render json: @lastestVideo }
     end

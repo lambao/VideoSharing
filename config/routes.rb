@@ -19,6 +19,7 @@ VideoSharing::Application.routes.draw do
       resources :videos
       match 'hot', to: 'videos#hot_videos', via: [:get]
       match 'lastest', to: 'videos#lastest_videos', via: [:get]
+      match 'show/:id', to: 'videos#show', via: [:get]
     end
   end
 
