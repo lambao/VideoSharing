@@ -10,6 +10,18 @@ VideoSharing::Application.routes.draw do
   match 'user_list', to: 'manage_users#index', via: [:get]
   get 'manage_user/edit/:id', to: 'manage_users#edit'
   post 'manage_user/edit/:id', to: 'manage_users#update'
+  match 'user_token', to:'manage_users#generate_token', via: [:get, :post]
+  match 'generate', to: 'manage_users#generate', via: [:post]
+
+  namespace :api do
+    namespace :v1 do
+      resources :tokens, :only => [:create, :destroy, :generate]
+      resources :videos
+      match 'hot', to: 'videos#hot_videos', via: [:get]
+      match 'lastest', to: 'videos#lastest_videos', via: [:get]
+    end
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -13,6 +13,7 @@
           <% else %>
               <li><%= link_to "Post video", post_video_path %></li>
               <li><%= link_to "My videos", my_video_path %></li>
+              <li><%= link_to "Authentication token", user_token_path %></li>
               <% if (current_user.has_role?(:admin)) %>
                   <li><%= link_to "Assign role", user_list_path %></li>
               <% end %>

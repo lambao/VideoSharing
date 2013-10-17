@@ -1,0 +1,22 @@
+<div class="container-fluid">
+  <h3 class="video_header">Generate Token</h3>
+  <div class="row-fluid">
+    <div class="span8">
+      <form class="form-horizontal" id="generate_token" method="post" action="/generate">
+        <input type="hidden" value="<%= current_user.authentication_token %>" name="authenticity_token"></input>
+        <div class="control-group">
+          <label class="control-label" for="authentication_token">Authentication Token</label>
+          <div class="controls">
+            <input id="authentication_token" name="authentication_token" class="input-xlarge" type="text" value="<%= current_user.authentication_token %>" readonly>
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="generate"></label>
+          <div class="controls">
+            <button id="generate" class="btn btn-primary">Generate</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

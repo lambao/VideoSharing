@@ -2,11 +2,19 @@ class User < ActiveRecord::Base
   rolify
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
-  devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable, :omniauthable, :omniauth_providers => [:facebook]
+  devise :database_authenticatable,
+         :token_authenticatable,
+         :registerable,
+         :recoverable,
+         :rememberable,
+         :trackable,
+         :validatable,
+         :omniauthable,
+         :omniauth_providers => [:facebook]
+
   validates(:name, presence: true)
   has_many :videos, dependent: :destroy
-  after_create :assign_guest_role
+  after_create :assign_guest_role, :generate_authen_token
 
   def self.new_with_session(params, session)
     super.tap do |user|
@@ -32,5 +40,8 @@ class User < ActiveRecord::Base
   private
   def assign_guest_role
     self.add_role :guest
+  end
+  def generate_authen_token
+    self.ensure_authentication_token!
   end
 end

@@ -8,6 +8,16 @@ class ManageUsersController < ApplicationController
      @users = User.all
   end
 
+  def generate_token
+    if (current_user.authentication_token.blank?)
+      current_user.reset_authentication_token!
+    end
+  end
+  def generate
+    current_user.reset_authentication_token!
+    redirect_to user_token_path
+  end
+
   def edit
     if !(current_user.has_role?(:admin))
       flash[:error] = "You dont have right to access this page"
