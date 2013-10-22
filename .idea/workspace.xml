@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37751478-540b-427e-825b-a2e83b2f90d9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/_old_header.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home_pages/home.html.erb" afterPath="$PROJECT_DIR$/app/views/home_pages/home.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/home_pages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/home_pages_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/newhome.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/newhome.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="VideoSharing.iws" />
@@ -46,6 +36,9 @@
     <file path="/home.html.erb" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382440726460" ignored="false" />
     <file path="/_footer.html.erb" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382428322314" ignored="false" />
     <file path="/application_helper.rb" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382438285265" ignored="false" />
+    <file path="$PROJECT_DIR$/app/models/user.rb" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382441292738" ignored="false" />
+    <file path="$PROJECT_DIR$/app/assets/javascripts/application.js" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382441292738" ignored="false" />
+    <file path="/production.rb" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382441821817" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,10 +58,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="home.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="home.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home_pages/home.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="160" column="38" selection-start="7216" selection-end="7229" vertical-scroll-proportion="0.7706422">
+            <state line="160" column="38" selection-start="7216" selection-end="7229" vertical-scroll-proportion="-14.25">
               <folding>
                 <element signature="e#2368#2400#0" expanded="true" />
                 <element signature="e#4178#4210#0" expanded="true" />
@@ -77,37 +70,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home_pages_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/home_pages_controller.rb">
+      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="19" selection-start="181" selection-end="196" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="newhome.css.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/newhome.css.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="360" column="41" selection-start="6085" selection-end="6085" vertical-scroll-proportion="-1.7419355">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_lastest_videos.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/home_pages/_lastest_videos.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="14" selection-start="1110" selection-end="1194" vertical-scroll-proportion="-13.75">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application_helper.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="40" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0">
+            <state line="22" column="35" selection-start="1048" selection-end="1048" vertical-scroll-proportion="0.28">
               <folding />
             </state>
           </provider>
@@ -131,7 +97,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/manage_users/generate_token.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/manage_users_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/videos_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/home_pages/newhome.html.erb" />
@@ -147,6 +112,7 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/newhome.css.scss" />
         <option value="$PROJECT_DIR$/app/controllers/home_pages_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/home_pages/home.html.erb" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
       </list>
     </option>
   </component>
@@ -219,6 +185,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VideoSharing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VideoSharing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="environments" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -647,20 +631,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="18" selection-start="160" selection-end="170" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environment.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/authentication.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -756,11 +726,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home_pages/home.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="160" column="38" selection-start="7216" selection-end="7229" vertical-scroll-proportion="0.7706422">
+        <state line="160" column="38" selection-start="7216" selection-end="7229" vertical-scroll-proportion="-14.25">
           <folding>
             <element signature="e#2368#2400#0" expanded="true" />
             <element signature="e#4178#4210#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.621547">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="35" selection-start="1048" selection-end="1048" vertical-scroll-proportion="0.28">
+          <folding />
         </state>
       </provider>
     </entry>
