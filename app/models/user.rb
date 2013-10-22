@@ -39,7 +39,13 @@ class User < ActiveRecord::Base
 
   private
   def assign_guest_role
-    self.add_role :guest
+    if self.has_role?(:admin)
+      self.remove_role(:admin)
+    end
+    if self.has_role?(:guest)
+      self.remove_role(:guest)
+    end
+    self.add_role(:guest)
   end
   def generate_authen_token
     self.ensure_authentication_token!

@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
+<%# Check Request controller to get right css files %>
 <head>
   <title>VideoSharing</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <% if old_style? %>
+  <%=   stylesheet_link_tag("custom") %>
+  <% else %>
+  <%=   stylesheet_link_tag("newhome") %>
+  <% end %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -49,7 +54,6 @@
         });
     };
 
-
     (function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
@@ -60,20 +64,28 @@
 
 </script>
 
+<% if !old_style?  %>
 <%= render 'layouts/header' %>
-
-<div class="container">
-  <% flash.each do |key, value| %>
-      <div class="alert alert-<%= key %>"><%= value %></div>
-  <% end %>
-  <div class="row">
-    <div class="span10">
-      <%= yield %>
+<%= yield %>
+<%= render 'layouts/footer' %>
+<%# render old layout  %>
+<% else %>
+<%= render 'layouts/old_header' %>
+    <div class="container">
+      <% flash.each do |key, value| %>
+          <div class="alert alert-<%= key %>"><%= value %></div>
+      <% end %>
+      <div class="row-fluid">
+        <div class="span10">
+          <%= yield %>
+        </div>
+        <div class="span2">
+          <%= render 'layouts/aside' %>
+        </div>
+      </div>
     </div>
-    <div class="span2">
-      <%= render 'layouts/aside' %>
-    </div>
-  </div>
+<% end %>
+<div>
   <%= debug(params) if Rails.env.development? %>
 </div>
 </body>
