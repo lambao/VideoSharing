@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37751478-540b-427e-825b-a2e83b2f90d9" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/custom-c8c410242e4a164f0b7b078221739b4c.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/custom-c8c410242e4a164f0b7b078221739b4c.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/manifest-686238b4532edb4562fb96d4016ece4b.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/newhome-545097f36342b157f490f22d967f6569.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/newhome-545097f36342b157f490f22d967f6569.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/newhome-72fa1471a965500b8574e4b35e9454a0.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/newhome-72fa1471a965500b8574e4b35e9454a0.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/manifest-084448cdadf7e5426d822b7cfbc42f0b.json" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/newhome.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/newhome.css.scss.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="VideoSharing.iws" />
@@ -39,12 +35,12 @@
     <file path="/user.rb" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382001641953" ignored="false" />
     <file path="/generate_token.html.erb" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382003408004" ignored="false" />
     <file path="/newhome.html.erb" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382008374095" ignored="false" />
-    <file path="/newhome.css.scss" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382438957013" ignored="false" />
+    <file path="/newhome.css.scss" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382500070000" ignored="false" />
     <file path="/home.html.erb" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382440726460" ignored="false" />
     <file path="/_footer.html.erb" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382428322314" ignored="false" />
     <file path="/application_helper.rb" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382438285265" ignored="false" />
     <file path="$PROJECT_DIR$/app/models/user.rb" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382441292738" ignored="false" />
-    <file path="/production.rb" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382497054440" ignored="false" />
+    <file path="/production.rb" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382499756017" ignored="false" />
     <file path="/application.rb" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382499354244" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,10 +61,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="44" selection-start="2015" selection-end="2015" vertical-scroll-proportion="-0.65697676">
+            <state line="61" column="57" selection-start="2469" selection-end="2523" vertical-scroll-proportion="-6.7419353">
               <folding />
             </state>
           </provider>
@@ -77,7 +73,7 @@
       <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/application.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="61" selection-start="1091" selection-end="1091" vertical-scroll-proportion="0.0">
+            <state line="23" column="58" selection-start="1150" selection-end="1150" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -86,16 +82,25 @@
       <file leaf-file-name="_header.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="55" selection-start="480" selection-end="480" vertical-scroll-proportion="-8.75">
+            <state line="14" column="31" selection-start="480" selection-end="480" vertical-scroll-proportion="-8.75">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newhome.css.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/newhome.css.scss">
+      <file leaf-file-name="newhome.css.scss.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/newhome.css.scss.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="153" column="42" selection-start="2827" selection-end="2837" vertical-scroll-proportion="0.0">
+            <state line="110" column="26" selection-start="2023" selection-end="2023" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="newhome-4941c72cd18e5ffe9dfc58b5caca8c5d.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/assets/newhome-4941c72cd18e5ffe9dfc58b5caca8c5d.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.12820514">
               <folding />
             </state>
           </provider>
@@ -119,7 +124,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/home_pages/newhome.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
@@ -133,8 +137,9 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/newhome.css.scss" />
         <option value="$PROJECT_DIR$/config/application.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/newhome.css.scss" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/newhome.css.scss.erb" />
       </list>
     </option>
   </component>
@@ -384,6 +389,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/assets/stylesheets" />
+    </key>
   </component>
   <component name="RunManager" selected="Rails.Development: VideoSharing">
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
@@ -780,30 +790,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/newhome.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="153" column="42" selection-start="2827" selection-end="2837" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="55" selection-start="480" selection-end="480" vertical-scroll-proportion="-8.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="61" selection-start="1091" selection-end="1091" vertical-scroll-proportion="0.0">
+        <state line="14" column="31" selection-start="480" selection-end="480" vertical-scroll-proportion="-8.75">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="44" selection-start="2015" selection-end="2015" vertical-scroll-proportion="-0.65697676">
+        <state line="61" column="57" selection-start="2469" selection-end="2523" vertical-scroll-proportion="-6.7419353">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="58" selection-start="1150" selection-end="1150" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/newhome.css.scss.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="110" column="26" selection-start="2023" selection-end="2023" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/newhome-4941c72cd18e5ffe9dfc58b5caca8c5d.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.12820514">
           <folding />
         </state>
       </provider>
