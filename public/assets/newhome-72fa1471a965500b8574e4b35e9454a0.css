@@ -91,7 +91,7 @@ table {
   width: 100%;
   height: 46px;
   line-height: 46px;
-  background-image: url(/assets/nav_bar_bg.jpg); }
+  background-image: url("/assets/nav_bar_bg.jpg"); }
 
 .nav_item {
   width: 110px;
