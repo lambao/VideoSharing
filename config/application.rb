@@ -21,7 +21,6 @@ module VideoSharing
     # config.i18n.default_locale = :de
     config.assets.initialize_on_precompile = false
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
-    config.assets.precompile += %w(custom.css home_pages.css)
-    config.serve_static_assets = true
+    config.assets.precompile += %w(custom.css newhome.css)
   end
 end
