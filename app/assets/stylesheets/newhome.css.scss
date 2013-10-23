@@ -130,20 +130,20 @@ $left-margin: 146px;
 }
 
 #nav_features {
-  background-image:url(image_path('/assets/arrow.jpg'));
+  background-image:url(image_path('arrow.jpg'));
   background-repeat:no-repeat; /*important*/
   background-position: 72px 12px;
 }
 
 #nav_blog {
   margin-left: 35px;
-  background-image:url(image_path('/assets/arrow.jpg'));
+  background-image:url(image_path('arrow.jpg'));
   background-repeat:no-repeat; /*important*/
   background-position: 36px 12px;
 }
 
 #nav_contact {
-  background-image:url(image_path('/assets/arrow.jpg'));
+  background-image:url(image_path('arrow.jpg'));
   background-repeat:no-repeat; /*important*/
   background-position: 65px 12px;
 }
@@ -151,7 +151,7 @@ $left-margin: 146px;
 #nav_search {
   width:229px;
   height:28px;
-  background-image:url(image_path('/assets/search_box.jpg'));
+  background-image:url(image_path('search_box.jpg'));
   background-repeat:no-repeat; /*important*/
   padding:0px;
   margin-top:8px;

@@ -59,10 +59,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="home.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="home.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home_pages/home.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="130" column="67" selection-start="6229" selection-end="6229" vertical-scroll-proportion="0.10714286">
+            <state line="131" column="25" selection-start="6248" selection-end="6248" vertical-scroll-proportion="-35.727272">
               <folding />
             </state>
           </provider>
@@ -71,7 +71,7 @@
       <file leaf-file-name="_header.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="31" selection-start="480" selection-end="480" vertical-scroll-proportion="-8.75">
+            <state line="18" column="25" selection-start="606" selection-end="618" vertical-scroll-proportion="-11.25">
               <folding />
             </state>
           </provider>
@@ -95,10 +95,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newhome.css.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="newhome.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/newhome.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="512" column="38" selection-start="8593" selection-end="8593" vertical-scroll-proportion="0.0">
+            <state line="158" column="51" selection-start="2986" selection-end="2986" vertical-scroll-proportion="0.45547944">
               <folding />
             </state>
           </provider>
@@ -136,8 +136,8 @@
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/newhome.css.scss.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/newhome.css.scss" />
         <option value="$PROJECT_DIR$/app/views/home_pages/home.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/newhome.css.scss" />
       </list>
     </option>
   </component>
@@ -817,30 +817,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/newhome.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/views/home_pages/home.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="512" column="38" selection-start="8593" selection-end="8593" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/newhome-bef65efd74833478d3017278bb50ed97.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="1438" selection-start="1438" selection-end="1438" vertical-scroll-proportion="0.0">
+        <state line="131" column="25" selection-start="6248" selection-end="6248" vertical-scroll-proportion="-35.727272">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="31" selection-start="480" selection-end="480" vertical-scroll-proportion="-8.75">
+        <state line="18" column="25" selection-start="606" selection-end="618" vertical-scroll-proportion="-11.25">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home_pages/home.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/newhome.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="67" selection-start="6229" selection-end="6229" vertical-scroll-proportion="0.10714286">
+        <state line="158" column="51" selection-start="2986" selection-end="2986" vertical-scroll-proportion="0.45547944">
           <folding />
         </state>
       </provider>
