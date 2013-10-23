@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37751478-540b-427e-825b-a2e83b2f90d9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/newhome.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/newhome.css.scss" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/custom-c8c410242e4a164f0b7b078221739b4c.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/custom-c8c410242e4a164f0b7b078221739b4c.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/manifest-686238b4532edb4562fb96d4016ece4b.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/newhome-545097f36342b157f490f22d967f6569.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/newhome-545097f36342b157f490f22d967f6569.css.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/newhome-72fa1471a965500b8574e4b35e9454a0.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/newhome-72fa1471a965500b8574e4b35e9454a0.css.gz" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="VideoSharing.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,7 +45,7 @@
     <file path="/application_helper.rb" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382438285265" ignored="false" />
     <file path="$PROJECT_DIR$/app/models/user.rb" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382441292738" ignored="false" />
     <file path="/production.rb" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382497054440" ignored="false" />
-    <file path="/application.rb" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382498663417" ignored="false" />
+    <file path="/application.rb" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382499354244" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,10 +65,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="56" selection-start="2522" selection-end="2522" vertical-scroll-proportion="0.0">
+            <state line="50" column="44" selection-start="2015" selection-end="2015" vertical-scroll-proportion="-0.65697676">
               <folding />
             </state>
           </provider>
@@ -69,7 +77,7 @@
       <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/application.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="4" selection-start="1095" selection-end="1149" vertical-scroll-proportion="0.0">
+            <state line="22" column="61" selection-start="1091" selection-end="1091" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -84,10 +92,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newhome.css.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="newhome.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/newhome.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="153" column="32" selection-start="2827" selection-end="2827" vertical-scroll-proportion="0.24">
+            <state line="153" column="42" selection-start="2827" selection-end="2837" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -124,9 +132,9 @@
         <option value="$PROJECT_DIR$/app/views/home_pages/home.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-        <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/newhome.css.scss" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
       </list>
     </option>
   </component>
@@ -342,6 +350,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VideoSharing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VideoSharing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -727,13 +757,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/custom-c8c410242e4a164f0b7b078221739b4c.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home_pages.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -748,20 +771,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/application-38612572a011965b40f35910dc2c00c1.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="56" selection-start="2522" selection-end="2522" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="21" selection-start="643" selection-end="643" vertical-scroll-proportion="0.56">
@@ -771,9 +780,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/newhome.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="4" selection-start="1095" selection-end="1149" vertical-scroll-proportion="0.0">
+        <state line="153" column="42" selection-start="2827" selection-end="2837" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -785,9 +794,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/newhome.css.scss">
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="153" column="32" selection-start="2827" selection-end="2827" vertical-scroll-proportion="0.24">
+        <state line="22" column="61" selection-start="1091" selection-end="1091" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="44" selection-start="2015" selection-end="2015" vertical-scroll-proportion="-0.65697676">
           <folding />
         </state>
       </provider>
