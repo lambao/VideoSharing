@@ -32,8 +32,8 @@
     <file path="/user.rb" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382001641953" ignored="false" />
     <file path="/generate_token.html.erb" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382003408004" ignored="false" />
     <file path="/newhome.html.erb" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382008374095" ignored="false" />
-    <file path="/newhome.css.scss" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382501661966" ignored="false" />
-    <file path="/home.html.erb" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382502172278" ignored="false" />
+    <file path="/newhome.css.scss" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382502918107" ignored="false" />
+    <file path="/home.html.erb" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382502942359" ignored="false" />
     <file path="/_footer.html.erb" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382428322314" ignored="false" />
     <file path="/application_helper.rb" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382438285265" ignored="false" />
     <file path="$PROJECT_DIR$/app/models/user.rb" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382441292738" ignored="false" />
@@ -62,7 +62,7 @@
       <file leaf-file-name="home.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home_pages/home.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="131" column="25" selection-start="6248" selection-end="6248" vertical-scroll-proportion="-35.727272">
+            <state line="93" column="32" selection-start="4078" selection-end="4091" vertical-scroll-proportion="-5.7272725">
               <folding />
             </state>
           </provider>
@@ -98,7 +98,7 @@
       <file leaf-file-name="newhome.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/newhome.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="158" column="51" selection-start="2986" selection-end="2986" vertical-scroll-proportion="0.45547944">
+            <state line="362" column="3" selection-start="6193" selection-end="6193" vertical-scroll-proportion="0.79452056">
               <folding />
             </state>
           </provider>
@@ -817,13 +817,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home_pages/home.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="25" selection-start="6248" selection-end="6248" vertical-scroll-proportion="-35.727272">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="25" selection-start="606" selection-end="618" vertical-scroll-proportion="-11.25">
@@ -831,9 +824,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home_pages/home.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="32" selection-start="4078" selection-end="4091" vertical-scroll-proportion="-5.7272725">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/newhome.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="158" column="51" selection-start="2986" selection-end="2986" vertical-scroll-proportion="0.45547944">
+        <state line="362" column="3" selection-start="6193" selection-end="6193" vertical-scroll-proportion="0.79452056">
           <folding />
         </state>
       </provider>
