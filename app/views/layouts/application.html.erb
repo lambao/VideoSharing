@@ -5,9 +5,9 @@
   <title>VideoSharing</title>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <% if old_style? %>
-  <%=   stylesheet_link_tag("custom") %>
+  <%=   stylesheet_link_tag("custom", media: "all") %>
   <% else %>
-  <%=   stylesheet_link_tag("newhome") %>
+  <%=   stylesheet_link_tag("newhome", media: "all") %>
   <% end %>
   <%= csrf_meta_tags %>
 </head>
