@@ -8,7 +8,7 @@
             <%= f.label :title %>
             <%= f.text_field :title %>
             <%= f.label(:youtube_url, 'Youtube Url') %>
-            <%= f.text_field(:youtube_url)  %>
+            <%= f.text_field(:youtube_url, :onchange => 'onYTUrlChange()')  %>
             <%= f.label(:description, 'Description') %>
             <%= f.text_field :description %>
             <%= f.label :length %>
@@ -23,12 +23,10 @@
 </div>
 
 <script type="text/javascript">
-    $("#video_youtube_url").change(function() {
-        if ($("#video_youtube_url").val().length >= 0 ){
-            var tmp = $("#video_youtube_url").val().match(/^(?:https?:\/\/)?(?:www\.)?\w*\.\w*\/(?:watch\?v=)?((?:p\/)?[\w\-]+)/);
-            if (tmp != null && tmp.length >= 1) {
-                console.log(tmp[1])
-            }
-        }
-    });
+    function onYTUrlChange() {
+        console.log("id");
+        var ytplayer = document.getElementById("video_youtube_url");
+        var regex = new RegExp('^(?:https?:\/\/)?(?:www\.)?\w*\.\w*\/(?:watch\?v=)?((?:p\/)?[\w\-]+)');
+        console.log(regex.exec(ytplayer.value));
+    }
 </script>

@@ -17,6 +17,9 @@ gem 'rolify'
 # Xml parse
 gem 'nokogiri'
 
+# Paperclip
+gem "paperclip", '3.5.0'
+
 # login with facebook
 gem 'omniauth'
 gem 'omniauth-facebook'
