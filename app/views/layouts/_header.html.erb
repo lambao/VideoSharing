@@ -26,7 +26,10 @@
       <%= link_to("Contact", root_path, class: "nav_title") %>
     </div>
     <div id="nav_search" class="nav_item">
-      <input type="text" name="search" value="" class="search_txt" placeholder="Search">
+      <form action="#" id="search_box">
+        <input type="text" name="search" value="" class="search_txt" placeholder="Search"/>
+        <button type="submit" id="search_btn"><img src="search_icon.png" title="Search" /></button>
+      </form>
     </div>
   </div>
 </header>

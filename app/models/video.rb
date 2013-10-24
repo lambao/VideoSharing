@@ -8,6 +8,7 @@ class Video < ActiveRecord::Base
   resourcify
   attr_accessor :avatar_remote_url
   attr_reader :avatar_remote_url
+
   has_attached_file :thumb,
                     :command_path => "/usr/local/bin/",
                     :styles => { :featured => "123x87",

@@ -14,7 +14,7 @@
               <%= image_tag(@featuredVideos[0].thumb.url(:featured)) %>
             </div>
           </div>
-          <div id="first_metadata_wrapper">
+          <div id="first_metadata_wrapper" class="featured_wrapper">
             <div class = "metadata_box">
               <span onclick="changePlayVideo('<%= @featuredVideos[0].youtube_id %>')"><%= @featuredVideos[0].title %></span>
               <h1> <%= @featuredVideos[0].created_at.strftime("%b %d, %Y") %> </h1>
@@ -29,9 +29,9 @@
               <%= image_tag(@featuredVideos[1].thumb.url(:featured)) %>
             </div>
           </div>
-          <div id="second_metadata_wrapper">
+          <div id="second_metadata_wrapper" class="featured_wrapper">
             <div class = "metadata_box">
-              <span><%= @featuredVideos[1].title %></span>
+              <span onclick="changePlayVideo('<%= @featuredVideos[1].youtube_id %>')"><%= @featuredVideos[1].title %></span>
               <h1> <%= @featuredVideos[1].created_at.strftime("%b %d, %Y") %> </h1>
             </div>
           </div>
@@ -44,9 +44,9 @@
               <%= image_tag(@featuredVideos[2].thumb.url(:featured)) %>
             </div>
           </div>
-          <div id="third_metadata_wrapper">
+          <div id="third_metadata_wrapper" class="featured_wrapper">
             <div class = "metadata_box">
-              <span><%= @featuredVideos[2].title %></span>
+              <span onclick="changePlayVideo('<%= @featuredVideos[2].youtube_id %>')"><%= @featuredVideos[2].title %></span>
               <h1> <%= @featuredVideos[2].created_at.strftime("%b %d, %Y") %> </h1>
             </div>
           </div>
@@ -65,24 +65,36 @@
           <div id="hot_content">
             <% if @hotVideo.any?  %>
             <div id="first_hot_video" class="large_video_metadata">
-              <%= image_tag(@hotVideo[0].thumb.url(:newthumb)) %>
-              <p class="large_video_title"><%= @hotVideo[0].title %></p>
+              <a href="/show/<%= @hotVideo[0].id %>">
+                <div class="thumb_wrapper">
+                  <%= image_tag(@hotVideo[0].thumb.url(:newthumb)) %>
+                </div>
+                <p class="large_video_title"><%= @hotVideo[0].title %></p>
+              </a>
               <p class="time_stamp"><%= @hotVideo[0].created_at.strftime("%b %d, %Y") %></p>
               <p class="description"><%= @hotVideo[0].description %></p>
             </div>
             <% end %>
             <% if @hotVideo.length >= 2 %>
             <div id="second_hot_video" class="large_video_metadata">
-              <%= image_tag(@hotVideo[1].thumb.url(:newthumb)) %>
-              <p class="large_video_title"><%= @hotVideo[1].title %></p>
+              <a href="/show/<%= @hotVideo[1].id %>">
+                <div class="thumb_wrapper">
+                  <%= image_tag(@hotVideo[1].thumb.url(:newthumb)) %>
+                </div>
+                <p class="large_video_title"><%= @hotVideo[1].title %></p>
+              </a>
               <p class="time_stamp"><%= @hotVideo[1].created_at.strftime("%b %d, %Y") %></p>
               <p class="description"><%= @hotVideo[1].description %></p>
             </div>
             <% end %>
             <% if @hotVideo.length >= 3 %>
             <div id="third_hot_video" class="large_video_metadata">
-              <%= image_tag(@hotVideo[2].thumb.url(:newthumb)) %>
-              <p class="large_video_title"><%= @hotVideo[2].title %></p>
+              <a href="/show/<%= @hotVideo[2].id %>">
+                <div class="thumb_wrapper">
+                  <%= image_tag(@hotVideo[2].thumb.url(:newthumb)) %>
+                </div>
+                <p class="large_video_title"><%= @hotVideo[2].title %></p>
+              </a>
               <p class="time_stamp"><%= @hotVideo[2].created_at.strftime("%b %d, %Y") %></p>
               <p class="description"><%= @hotVideo[2].description %></p>
             </div>
@@ -97,25 +109,37 @@
             </div>
           <div id="lastest_content">
               <% if @lastestVideo.any?  %>
-                  <div id="first_hot_video" class="large_video_metadata">
-                    <%= image_tag(@lastestVideo[0].thumb.url(:newthumb)) %>
-                    <p class="large_video_title"><%= @lastestVideo[0].title %></p>
+                  <div id="first_lastest_video" class="large_video_metadata">
+                    <a href="/show/<%= @lastestVideo[0].id %>">
+                      <div class="thumb_wrapper">
+                        <%= image_tag(@lastestVideo[0].thumb.url(:newthumb)) %>
+                      </div>
+                      <p class="large_video_title"><%= @lastestVideo[0].title %></p>
+                    </a>
                     <p class="time_stamp"><%= @lastestVideo[0].created_at.strftime("%b %d, %Y") %></p>
                     <p class="description"><%= @lastestVideo[0].description %></p>
                   </div>
               <% end %>
               <% if @lastestVideo.length >= 2 %>
-                  <div id="second_hot_video" class="large_video_metadata">
-                    <%= image_tag(@lastestVideo[1].thumb.url(:newthumb)) %>
-                    <p class="large_video_title"><%= @lastestVideo[1].title %></p>
+                  <div id="second_lastest_video" class="large_video_metadata">
+                    <a href="/show/<%= @lastestVideo[1].id %>">
+                      <div class="thumb_wrapper">
+                        <%= image_tag(@lastestVideo[1].thumb.url(:newthumb)) %>
+                      </div>
+                      <p class="large_video_title"><%= @lastestVideo[1].title %></p>
+                    </a>
                     <p class="time_stamp"><%= @lastestVideo[1].created_at.strftime("%b %d, %Y") %></p>
                     <p class="description"><%= @lastestVideo[1].description %></p>
                   </div>
               <% end %>
               <% if @lastestVideo.length >= 3 %>
-                  <div id="third_hot_video" class="large_video_metadata">
-                    <%= image_tag(@lastestVideo[2].thumb.url(:newthumb)) %>
-                    <p class="large_video_title"><%= @lastestVideo[2].title %></p>
+                  <div id="third_lastest_video" class="large_video_metadata">
+                    <a href="/show/<%= @lastestVideo[2].id %>">
+                      <div class="thumb_wrapper">
+                        <%= image_tag(@lastestVideo[2].thumb.url(:newthumb)) %>
+                      </div>
+                      <p class="large_video_title"><%= @lastestVideo[2].title %></p>
+                    </a>
                     <p class="time_stamp"><%= @lastestVideo[2].created_at.strftime("%b %d, %Y") %></p>
                     <p class="description"><%= @lastestVideo[2].description %></p>
                   </div>
@@ -133,7 +157,7 @@
         </div>
       </div>
     </div>
-
+    <% if @featuredVideos.any? %>
     <script type="text/javascript">
         var tag = document.createElement('script');
         tag.src = "https://www.youtube.com/iframe_api";
@@ -154,15 +178,12 @@
         };
 
         function changePlayVideo(id) {
-            console.log(id);
-            var ytplayer = document.getElementById("ytmainplayer");
-            console.log(ytplayer);
-            if (ytplayer) {
-                ytplayer.loadVideoById(id);
+            if (player) {
+                player.loadVideoById(id);
             }
         }
     </script>
-
+    <% end %>
 <% else %>
 
 <% if @lastestVideo.any? %>

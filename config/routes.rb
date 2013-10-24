@@ -12,6 +12,7 @@ VideoSharing::Application.routes.draw do
   post 'manage_user/edit/:id', to: 'manage_users#update'
   match 'user_token', to:'manage_users#generate_token', via: [:get, :post]
   match 'generate', to: 'manage_users#generate', via: [:post]
+  match 'show/:id', to: 'videos#show', via: [:get]
 
   namespace :api do
     namespace :v1 do
