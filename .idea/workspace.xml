@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37751478-540b-427e-825b-a2e83b2f90d9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/VideoSharing.iml" afterPath="$PROJECT_DIR$/.idea/VideoSharing.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home_pages/_hot_videos.html.erb" afterPath="$PROJECT_DIR$/app/views/home_pages/_hot_videos.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home_pages/_lastest_videos.html.erb" afterPath="$PROJECT_DIR$/app/views/home_pages/_lastest_videos.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home_pages/home.html.erb" afterPath="$PROJECT_DIR$/app/views/home_pages/home.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/videos/new.html.erb" afterPath="$PROJECT_DIR$/app/views/videos/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/video.rb" afterPath="$PROJECT_DIR$/app/models/video.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/videos_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/videos_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="VideoSharing.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,7 +12,7 @@
     <file path="/new.html.erb" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382515874794" ignored="false" />
     <file path="/videos_controller.rb" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382523443711" ignored="false" />
     <file path="/video.rb" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382586731090" ignored="false" />
-    <file path="/Gemfile" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382523720171" ignored="false" />
+    <file path="/Gemfile" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382589354149" ignored="false" />
     <file path="/ability.rb" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1381891213477" ignored="false" />
     <file path="/_header.html.erb" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382428133980" ignored="false" />
     <file path="/manage_users_controller.rb" changelist="37751478-540b-427e-825b-a2e83b2f90d9" time="1382003996026" ignored="false" />
@@ -70,10 +58,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="home.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="home.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home_pages/home.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="45" selection-start="1744" selection-end="1744" vertical-scroll-proportion="0.04464286">
+            <state line="43" column="45" selection-start="1744" selection-end="1744" vertical-scroll-proportion="-0.625">
               <folding />
             </state>
           </provider>
@@ -82,7 +70,7 @@
       <file leaf-file-name="_lastest_videos.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home_pages/_lastest_videos.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="90" selection-start="298" selection-end="362" vertical-scroll-proportion="-6.25">
+            <state line="14" column="55" selection-start="561" selection-end="561" vertical-scroll-proportion="-8.75">
               <folding />
             </state>
           </provider>
@@ -108,10 +96,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="24" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0">
+            <state line="68" column="14" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.40214476">
               <folding />
             </state>
           </provider>
@@ -120,7 +108,16 @@
       <file leaf-file-name="development.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="47" selection-start="1116" selection-end="1116" vertical-scroll-proportion="0.0">
+            <state line="31" column="34" selection-start="1195" selection-end="1227" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/application.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="38" selection-start="1257" selection-end="1257" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -154,12 +151,12 @@
         <option value="$PROJECT_DIR$/app/views/videos/new.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/videos_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/home_pages/_lastest_videos.html.erb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/db/migrate/20131024032633_add_thumb_remote_url_to_videos.rb" />
         <option value="$PROJECT_DIR$/app/models/video.rb" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/app/views/home_pages/_hot_videos.html.erb" />
         <option value="$PROJECT_DIR$/app/views/home_pages/home.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -844,16 +841,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environment.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="4" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.4871795" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/videos/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="53" selection-start="1884" selection-end="1884" vertical-scroll-proportion="1.3300493">
@@ -889,30 +876,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="47" selection-start="1116" selection-end="1116" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="24" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home_pages/_hot_videos.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="58" selection-start="996" selection-end="996" vertical-scroll-proportion="-7.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home_pages/_lastest_videos.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="90" selection-start="298" selection-end="362" vertical-scroll-proportion="-6.25">
           <folding />
         </state>
       </provider>
@@ -928,7 +894,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home_pages/home.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="45" selection-start="1744" selection-end="1744" vertical-scroll-proportion="0.04464286">
+        <state line="43" column="45" selection-start="1744" selection-end="1744" vertical-scroll-proportion="-0.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home_pages/_lastest_videos.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="55" selection-start="561" selection-end="561" vertical-scroll-proportion="-8.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="38" selection-start="1257" selection-end="1257" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="34" selection-start="1195" selection-end="1227" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="14" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.40214476">
           <folding />
         </state>
       </provider>
