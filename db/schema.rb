@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131017081706) do
+ActiveRecord::Schema.define(version: 20131024032633) do
 
   create_table "roles", force: true do |t|
     t.string   "name"
@@ -55,14 +55,19 @@ ActiveRecord::Schema.define(version: 20131017081706) do
 
   create_table "videos", force: true do |t|
     t.string   "title"
-    t.integer  "length",      default: 0
+    t.integer  "length",             default: 0
     t.text     "youtube_id"
-    t.integer  "view_count",  default: 0
+    t.integer  "view_count",         default: 0
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
     t.string   "youtube_url"
     t.text     "description"
+    t.string   "thumb_file_name"
+    t.string   "thumb_content_type"
+    t.integer  "thumb_file_size"
+    t.datetime "thumb_updated_at"
+    t.string   "thumb_remote_url"
   end
 
   add_index "videos", ["created_at"], name: "index_videos_on_created_at"

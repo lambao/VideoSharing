@@ -28,4 +28,11 @@ VideoSharing::Application.configure do
   config.assets.debug = true
 
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  Paperclip.options[:command_path] = "/usr/bin/"
+  Paperclip.options[:log] = true
+  Paperclip.options[:log_command] = true
+  Paperclip::Attachment.default_options[:url] = '/assets/thumbs/:id/:style/:basename.:extension'
+  Paperclip::Attachment.default_options[:path] = ':rails_root/public/assets/thumbs/:id/:style/:basename.:extension'
+
 end

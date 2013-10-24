@@ -19,7 +19,7 @@ module ApplicationHelper
   end
   def right_controller?
     if params[:controller] == 'devise/sessions'
-      if params[:action] == 'new'
+      if (params[:action] == 'new') || (params[:action] == 'create')
         old_style = true
       end
     end
@@ -34,12 +34,7 @@ module ApplicationHelper
       end
     end
     if params[:controller] == 'home_pages'
-      if params[:action] == 'hot'
-        old_style = true
-      end
-    end
-    if params[:controller] == 'home_pages'
-      if params[:action] == 'lastest'
+      if (params[:action] == 'hot') || (params[:action] == 'lastest')
         old_style = true
       end
     end

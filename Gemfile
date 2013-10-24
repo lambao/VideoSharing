@@ -17,6 +17,9 @@ gem 'rolify'
 # Xml parse
 gem 'nokogiri'
 
+# Paperclip
+gem "paperclip", '3.5.0'
+
 # login with facebook
 gem 'omniauth'
 gem 'omniauth-facebook'
@@ -63,6 +66,7 @@ end
 group :production do
   gem 'pg'
   gem 'rails_12factor'
+  gem 'rmagick'
 end
 
 # Use ActiveModel has_secure_password
