@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37751478-540b-427e-825b-a2e83b2f90d9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="VideoSharing.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -99,7 +99,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="14" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.40214476">
+            <state line="69" column="16" selection-start="1326" selection-end="1326" vertical-scroll-proportion="0.23592493">
               <folding />
             </state>
           </provider>
@@ -929,7 +929,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="14" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.40214476">
+        <state line="69" column="16" selection-start="1326" selection-end="1326" vertical-scroll-proportion="0.23592493">
           <folding />
         </state>
       </provider>
