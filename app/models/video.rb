@@ -6,8 +6,8 @@ class Video < ActiveRecord::Base
   require 'uri'
 
   resourcify
-  attr_accessor :avatar_remote_url
-  attr_reader :avatar_remote_url
+  attr_accessor :thumb_remote_url
+  attr_reader :thumb_remote_url
 
   has_attached_file :thumb,
                     :command_path => "/usr/local/bin/",
@@ -38,19 +38,19 @@ class Video < ActiveRecord::Base
     end
   end
 
-  def avatar_remote_url=(url_value)
+  def thumb_remote_url=(url_value)
     self.thumb = URI.parse(url_value)
     # Assuming url_value is http://example.com/photos/face.png
     # avatar_file_name == "face.png"
     # avatar_content_type == "image/png"
-    @avatar_remote_url = url_value
+    @thumb_remote_url = url_value
   end
 
   private
   def parse_youtube
     regex = /^(?:https?:\/\/)?(?:www\.)?\w*\.\w*\/(?:watch\?v=)?((?:p\/)?[\w\-]+)/
     self.youtube_id = self.youtube_url.match(regex)[1]
-    self.avatar_remote_url = get_thump_url(self.youtube_id)
+    self.thumb_remote_url = get_thump_url(self.youtube_id)
   end
 end
 

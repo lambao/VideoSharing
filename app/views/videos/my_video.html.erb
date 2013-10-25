@@ -9,7 +9,7 @@
           <% end %>
           <div class="span3">
             <div class="thumbnail">
-              <%= link_to(image_tag(video.get_thump_url(video.youtube_id), :class => "thumbnail_img"), video) %>
+              <%= link_to(image_tag(video.thumb.url(:oldthumb), :class => "thumbnail_img"), video) %>
             </div>
             <p class="video_title"><%= link_to(video.title, video) %></p>
             <span class="video_time">
