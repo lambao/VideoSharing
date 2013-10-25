@@ -23,7 +23,7 @@
       <%= link_to(image_tag('gplus.png'), root_path) %>
       <%= link_to(image_tag('rss.png'), root_path) %>
     </div>
-    <p class="commend_count">2 Comments</p>
+    <p class="commend_count"><fb:comments-count href=<%= request.protocol + request.host + url_for(:controller => 'videos', :action => 'show', :id => @video.id ) %>></fb:comments-count> Comments</p>
     <div class="fb-comments" data-href="<%= request.original_url %>" data-colorscheme="light" data-numposts="10" data-width="400"></div>
   </div>
   <div id="show_video_banner">
