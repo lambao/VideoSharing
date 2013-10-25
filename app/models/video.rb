@@ -15,7 +15,8 @@ class Video < ActiveRecord::Base
                                  :newthumb => "213x143",
                                  :oldthumb => "295x166" },
                     :url => "/assets/thumbs/:id/:style/:basename.:extension",
-                    :path => ":rails_root/public/assets/thumbs/:id/:style/:basename.:extension"
+                    :path => ":rails_root/public/assets/thumbs/:id/:style/:basename.:extension",
+                    :default_url => "/images/404.jpg"
   belongs_to :user
   before_save :parse_youtube
   validates(:title, presence: true)

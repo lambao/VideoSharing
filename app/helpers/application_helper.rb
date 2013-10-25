@@ -3,6 +3,11 @@ module ApplicationHelper
     old_style = false
     if right_role? || right_controller?
       old_style = true
+      if params[:controller] == 'videos'
+        if (params[:action] == 'show')
+          old_style = false
+        end
+      end
     end
     return old_style
   end
@@ -38,12 +43,6 @@ module ApplicationHelper
         old_style = true
       end
     end
-
-    #if params[:controller] == 'videos'
-    #  if (params[:action] == 'show')
-    #    old_style = true
-    #  end
-    #end
     return old_style
   end
 end

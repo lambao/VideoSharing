@@ -1,4 +1,3 @@
-<% if !old_style?  %>
 <div id="show_video">
   <div id="show_video_main">
     <div id="show_video_title">
@@ -36,31 +35,6 @@
   </div>
 </div>
 
-<% else %>
-
-<div class="row-fluid">
-  <div class="span7">
-      <div id="ytplayer">
-      </div>
-  </div>
-  <div class="span5">
-    <div id="metadata">
-      <span class="video_big_title"><%= @video.title %> </span>
-      <p class="video_description"><%= @video.description %></p>
-      <span class="video_time">
-        Posted by <%= @video.user.name %> <%=  time_ago_in_words(@video.created_at) %> ago.
-      </span>
-      <span class="video_count" id="video_count">
-        Total views: <%= @video.view_count %>
-      </span>
-      <span id="firstGen" hidden="true">first</span>
-    </div>
-    <div class="fb-like" data-href="<%= request.original_url %>" data-width="678" data-height="10" data-colorscheme="light" data-layout="standard" data-action="like" data-show-faces="true" data-send="false"></div>
-    <div class="fb-comments" data-href="<%= request.original_url %>" data-colorscheme="dark" data-numposts="10" data-width="678"></div>
-  </div>
-</div>
-
-<% end %>
 <script type="text/javascript">
     var tag = document.createElement('script');
     tag.src = "https://www.youtube.com/iframe_api";
@@ -79,15 +53,12 @@
         });
     }
     function onPlayerStateChange(event) {
-      if ($("#firstGen").text() == "first"){
         if (event.data  == 1) {
           $.ajax('', {
             url: "<%= increase_count_path %>",
             data: { id: "<%= @video.id %>"},
             type: 'PUT',
           });
-          $("#firstGen").text("other")
         }
-      }
     }
 </script>
