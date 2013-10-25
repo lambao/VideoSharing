@@ -181,7 +181,6 @@ $left-margin: 146px;
   }
 }
 
-
 .search_txt {
   border:0px; /*important*/
   background-color:transparent; /*important*/
@@ -191,6 +190,7 @@ $left-margin: 146px;
   left: 28px;
   top: -2px;
   color: rgb(153,153,153);
+  outline: none;
 }
 
 /* end header */

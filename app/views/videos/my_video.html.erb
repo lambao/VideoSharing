@@ -21,7 +21,7 @@
             <%= link_to "Delete", video, method: :delete, data: { confirm: "Are you sure?" } %>
             </p>
           </div>
-          <% if ((count % 4) == 3) || (count > (@videos.count - 1)) %>
+          <% if ((count % 4) == 3) || (video == @videos.last) %>
               </div>
           <% end
                 count += 1
