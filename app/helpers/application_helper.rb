@@ -38,11 +38,12 @@ module ApplicationHelper
         old_style = true
       end
     end
-    if params[:controller] == 'videos'
-      if (params[:action] == 'show')
-        old_style = true
-      end
-    end
+
+    #if params[:controller] == 'videos'
+    #  if (params[:action] == 'show')
+    #    old_style = true
+    #  end
+    #end
     return old_style
   end
 end

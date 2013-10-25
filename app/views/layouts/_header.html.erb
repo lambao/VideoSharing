@@ -5,10 +5,10 @@
     </div>
     <div id="loginbtn">
       <div id="login_normal">
-        <%= link_to(image_tag('login_btn.jpg'), new_user_session_path) %>
+        <%= link_to(image_tag('login_btn.png'), new_user_session_path) %>
       </div>
       <div id="login_with_facebook">
-        <%= link_to(image_tag('login_with_facebook.jpg'), user_omniauth_authorize_path(:facebook)) %>
+        <%= link_to(image_tag('facebook_login.png'), user_omniauth_authorize_path(:facebook)) %>
       </div>
     </div>
   </div>
@@ -28,7 +28,7 @@
     <div id="nav_search" class="nav_item">
       <form action="#" id="search_box">
         <input type="text" name="search" value="" class="search_txt" placeholder="Search"/>
-        <button type="submit" id="search_btn"><img src="search_icon.png" title="Search" /></button>
+        <button type="submit" id="search_btn"></button>
       </form>
     </div>
   </div>

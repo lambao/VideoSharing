@@ -1,12 +1,12 @@
 <% if !old_style?  %>
-    <div id="featured_videos" class="featured_videos">
-      <div id="main_featured_videos" class="main_featured_videos">
-        <div id="video_wrapper" class="video_wrapper">
+    <div id="featured_videos">
+      <div id="main_featured_videos">
+        <div id="main_video_wrapper">
           <div id="ytmainplayer">
           </div>
         </div>
       </div>
-      <div id="other_featured_videos" class="other_featured_videos">
+      <div id="other_featured_videos">
         <% if @featuredVideos.any?  %>
         <div id="first_featured_videos">
           <div id="first_thump_wrapper">
@@ -150,10 +150,10 @@
       </div>
       <div id="banner">
         <div id="banner_1">
-          <%= image_tag('banner_1.jpg') %>
+          <%= link_to(image_tag('banner_1.jpg'), root_path) %>
         </div>
         <div id="banner_2">
-          <%= image_tag('banner_2.jpg') %>
+          <%= link_to(image_tag('banner_2.jpg'), root_path) %>
         </div>
       </div>
     </div>

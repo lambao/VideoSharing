@@ -1,25 +1,66 @@
-<div class="row-fluid">
-    <div class="span7">
-     <div id="ytplayer">
-     </div>
+<% if !old_style?  %>
+<div id="show_video">
+  <div id="show_video_main">
+    <div id="show_video_title">
+      <span class="title"><%= @video.title %></span>
+      <span class="time_stamp"><%= @video.created_at.strftime("%b %d, %Y") %>, by </span>
+      <span class="creator"><%= @video.user.name %></span>
     </div>
-    <div class="span5">
-      <div id="metadata">
-          <span class="video_big_title"><%= @video.title %> </span>
-          <p class="video_description"><%= @video.description %></p>
-          <span class="video_time">
-            Posted by <%= @video.user.name %> <%=  time_ago_in_words(@video.created_at) %> ago.
-          </span>
-          <span class="video_count" id="video_count">
-            Total views: <%= @video.view_count %>
-          </span>
-          <span id="firstGen" hidden="true">first</span>
+    <div id="show_video_video_wrapper">
+      <div id="ytplayer">
       </div>
-      <div class="fb-like" data-href="<%= request.original_url %>" data-width="400" data-height="10" data-colorscheme="light" data-layout="standard" data-action="like" data-show-faces="true" data-send="false"></div>
-      <div class="fb-comments" data-href="<%= request.original_url %>" data-colorscheme="light" data-numposts="10" data-width="400"></div>
-</div>
+    </div>
+    <div id="show_video_description">
+      <p>
+        A dyno is a lightweight container running a single user-specified command. You can think of it as a virtualized Unix container—it can run any command available in its default environment (what we supply in the Cedar stack) combined with your app’s slug (which will be based on your code and its dependencies).
+      </p>
+    </div>
+    <div id="show_video_share">
+      <span>Share this post</span>
+      <%= link_to(image_tag('facebook.png'), root_path) %>
+      <%= link_to(image_tag('twitter.png'), root_path) %>
+      <%= link_to(image_tag('linkedIn.png'), root_path) %>
+      <%= link_to(image_tag('gplus.png'), root_path) %>
+      <%= link_to(image_tag('rss.png'), root_path) %>
+    </div>
+    <p class="commend_count">2 Comments</p>
+    <div class="fb-comments" data-href="<%= request.original_url %>" data-colorscheme="light" data-numposts="10" data-width="400"></div>
+  </div>
+  <div id="show_video_banner">
+    <div id="show_video_banner_1_wrapper">
+      <%= link_to(image_tag('banner_1.jpg'), root_path) %>
+    </div>
+    <div id="show_video_banner_2_wrapper">
+      <%= link_to(image_tag('banner_2.jpg'), root_path) %>
+    </div>
+  </div>
 </div>
 
+<% else %>
+
+<div class="row-fluid">
+  <div class="span7">
+      <div id="ytplayer">
+      </div>
+  </div>
+  <div class="span5">
+    <div id="metadata">
+      <span class="video_big_title"><%= @video.title %> </span>
+      <p class="video_description"><%= @video.description %></p>
+      <span class="video_time">
+        Posted by <%= @video.user.name %> <%=  time_ago_in_words(@video.created_at) %> ago.
+      </span>
+      <span class="video_count" id="video_count">
+        Total views: <%= @video.view_count %>
+      </span>
+      <span id="firstGen" hidden="true">first</span>
+    </div>
+    <div class="fb-like" data-href="<%= request.original_url %>" data-width="678" data-height="10" data-colorscheme="light" data-layout="standard" data-action="like" data-show-faces="true" data-send="false"></div>
+    <div class="fb-comments" data-href="<%= request.original_url %>" data-colorscheme="dark" data-numposts="10" data-width="678"></div>
+  </div>
+</div>
+
+<% end %>
 <script type="text/javascript">
     var tag = document.createElement('script');
     tag.src = "https://www.youtube.com/iframe_api";
@@ -29,8 +70,8 @@
     var player;
     function onYouTubeIframeAPIReady() {
         player = new YT.Player('ytplayer', {
-            height: '390',
-            width: '550',
+            height: '343',
+            width: '630',
             videoId: '<%= @video.youtube_id %>',
             events: {
                 'onStateChange': onPlayerStateChange
